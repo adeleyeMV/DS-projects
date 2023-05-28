@@ -30,7 +30,7 @@
 * Need high availability: Relational databases have a single point of failure. When that database goes down, a failover to a backup system must happen and takes time.
 
 ## Importance of Relational Databases:
----
+
 * Standardization of data model: Once your data is transformed into the rows and columns format, your data is standardized and you can query it with SQL
 * Flexibility in adding and altering tables: Relational databases gives you flexibility to add tables, alter tables, add and remove data.
 * Data Integrity: Data Integrity is the backbone of using a relational database.

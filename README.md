@@ -19,8 +19,8 @@
 * Smaller data volumes: If you have a smaller data volume (and not big data) you can use a relational database for its simplicity.
 * ACID Transactions: Allows you to meet a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, and thus maintain data integrity.
 * Easier to change to business requirements
-### Importance of Relational Databases:
 
+### Importance of Relational Databases:
 * Standardization of data model: Once your data is transformed into the rows and columns format, your data is standardized and you can query it with SQL
 * Flexibility in adding and altering tables: Relational databases gives you flexibility to add tables, alter tables, add and remove data.
 * Data Integrity: Data Integrity is the backbone of using a relational database.

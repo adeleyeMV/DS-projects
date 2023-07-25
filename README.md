@@ -37,3 +37,11 @@
 * Need a flexible schema: Flexible schema can allow for columns to be added that do not have to be used by every row, saving disk space.
 * Need high availability: Relational databases have a single point of failure. When that database goes down, a failover to a backup system must happen and takes time.
 
+## OLAP vs OLTP:
+---
+* Online Analytical Processing (OLAP):
+Databases optimized for these workloads allow for complex analytical and ad hoc queries, including aggregations. These type of databases are optimized for reads.
+
+* Online Transactional Processing (OLTP):
+Databases optimized for these workloads allow for less complex queries in large volume. The types of queries for these databases are read, insert, update, and delete.
+

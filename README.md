@@ -46,3 +46,10 @@ Databases optimized for these workloads allow for complex analytical and ad hoc 
 Databases optimized for these workloads allow for less complex queries in large volume. The types of queries for these databases are read, insert, update, and delete.
 
 * The key to remember the difference between OLAP and OLTP is analytics (A) vs transactions (T). If you want to get the price of a shoe then you are using OLTP (this has very little or no aggregations). If you want to know the total stock of shoes a particular store sold, then this requires using OLAP (since this will require aggregations).
+
+
+## Normal Forms:
+---
+### Objectives:
+1. To free the database from unwanted insertions, updates, & deletion dependencies
+2. To reduce the need for refactoring the database as new types of data are introduced

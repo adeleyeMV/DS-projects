@@ -63,3 +63,7 @@ Databases optimized for these workloads allow for less complex queries in large 
 * Be able to add data without altering tables
 * Separate different relations into different tables
 * Keep relationships between tables together with foreign keys
+
+#### Second Normal Form (2NF):
+* Have reached 1NF
+* All columns in the table must rely on the Primary Key

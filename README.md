@@ -55,3 +55,9 @@ Databases optimized for these workloads allow for less complex queries in large 
 2. To reduce the need for refactoring the database as new types of data are introduced
 3. To make the relational model more informative to users
 4. To make the database neutral to the query statistics
+### Types of Normal Forms:
+#### First Normal Form (1NF):
+* Atomic values: each cell contains unique and single values
+* Be able to add data without altering tables
+* Separate different relations into different tables
+* Keep relationships between tables together with foreign keys

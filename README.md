@@ -10,6 +10,7 @@
 **Durability** - Once transactions are committed, they remain committed  
 
 ## When to use Relational Database?
+
 ### Advantages of Using a Relational Database
 * Flexibility for writing in SQL queries: With SQL being the most common database query language.
 * Modeling the data not modeling queries
@@ -29,6 +30,7 @@
 * Intuitive Organization: The spreadsheet format is intuitive but intuitive to data modeling in relational databases.
 
 ## When to use NoSQL Database?
+
 ### Advantages of Using a NoSQL Database
 * Need to be able to store different data type formats: NoSQL was also created to handle different data configurations: structured, semi-structured, and unstructured data. JSON, XML documents can all be handled easily with NoSQL.
 * Large amounts of data: Relational Databases are not distributed databases and because of this they can only scale vertically by adding more storage in the machine itself. NoSQL databases were created to be able to be horizontally scalable. The more servers/systems you add to the database the more data that can be hosted with high availability and low latency (fast reads and writes).

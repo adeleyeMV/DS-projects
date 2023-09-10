@@ -67,3 +67,7 @@ Databases optimized for these workloads allow for less complex queries in large 
 #### Second Normal Form (2NF):
 * Have reached 1NF
 * All columns in the table must rely on the Primary Key
+#### Third Normal Form (3NF):
+* Must be in 2nd Normal Form
+* No transitive dependencies
+* Remember, transitive dependencies you are trying to maintain is that to get from A-> C, you want to avoid going through B.

@@ -78,3 +78,7 @@ Databases optimized for these workloads allow for less complex queries in large 
 ## Denormalization:
 ---
 JOINS on the database allow for outstanding flexibility but are extremely slow. If you are dealing with heavy reads on your database, you may want to think about denormalizing your tables. You get your data into normalized form, and then you proceed with denormalization. So, denormalization comes after normalization.
+
+## Normalize vs Denormalize:
+---
+Normalization is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible.

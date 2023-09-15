@@ -82,3 +82,17 @@ JOINS on the database allow for outstanding flexibility but are extremely slow. 
 ## Normalize vs Denormalize:
 ---
 Normalization is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible. Denormalization is trying to increase performance by reducing the number of joins between tables (as joins can be slow). Data integrity will take a bit of a potential hit, as there will be more copies of the data (to reduce JOINS).
+
+## Star Schema:
+---
+* Simplest style of data mart schema
+* Consist of 1 or more fact tables referencing multiple dimension tables
+
+### Benefits:
+* Denormalize tables, simplify queries and provide fast aggregations
+
+### Drawbacks:
+* Issues that come with denormalization
+* Data Integrity
+* Decrease Query Flexibility
+* Many to many relationship -- simplified

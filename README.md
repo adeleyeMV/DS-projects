@@ -80,11 +80,9 @@ Databases optimized for these workloads allow for less complex queries in large 
 JOINS on the database allow for outstanding flexibility but are extremely slow. If you are dealing with heavy reads on your database, you may want to think about denormalizing your tables. You get your data into normalized form, and then you proceed with denormalization. So, denormalization comes after normalization.
 
 ## Normalize vs Denormalize:
----
 Normalization is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible. Denormalization is trying to increase performance by reducing the number of joins between tables (as joins can be slow). Data integrity will take a bit of a potential hit, as there will be more copies of the data (to reduce JOINS).
 
 ## Star Schema:
----
 * Simplest style of data mart schema
 * Consist of 1 or more fact tables referencing multiple dimension tables
 
@@ -98,7 +96,6 @@ Normalization is about trying to increase data integrity by reducing the number 
 * Many to many relationship -- simplified
 
 ## Snowflake Schema:
----
 * Logical arrangement of tables in a multidimensional database
 * Represented by centralized fact tables that are connected to multiple dimensions
 * Dimensions of snowflake schema are elaborated, having multiple levels of relationships, child tables having multiple parents

@@ -96,3 +96,11 @@ Normalization is about trying to increase data integrity by reducing the number 
 * Data Integrity
 * Decrease Query Flexibility
 * Many to many relationship -- simplified
+
+## Snowflake Schema:
+---
+* Logical arrangement of tables in a multidimensional database
+* Represented by centralized fact tables that are connected to multiple dimensions
+* Dimensions of snowflake schema are elaborated, having multiple levels of relationships, child tables having multiple parents
+* Star schema is a special, simplified case of snowflake schema
+* Star schema does not allow for one to many relationships while snowflake schema does

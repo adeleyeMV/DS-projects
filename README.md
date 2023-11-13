@@ -103,7 +103,6 @@ Normalization is about trying to increase data integrity by reducing the number 
 * Star schema does not allow for one to many relationships while snowflake schema does
 
 ## Data Modelling using NoSQL Databases
----
 * NoSQL Databases stand for not only SQL databases
 * When Not to Use SQL?
     * Need high Availability in the data: Indicates the system is always up and there is no downtime

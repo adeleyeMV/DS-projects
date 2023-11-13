@@ -101,3 +101,9 @@ Normalization is about trying to increase data integrity by reducing the number 
 * Dimensions of snowflake schema are elaborated, having multiple levels of relationships, child tables having multiple parents
 * Star schema is a special, simplified case of snowflake schema
 * Star schema does not allow for one to many relationships while snowflake schema does
+
+## Data Modelling using NoSQL Databases
+---
+* NoSQL Databases stand for not only SQL databases
+* When Not to Use SQL?
+ 

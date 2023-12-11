@@ -112,7 +112,6 @@ Normalization is about trying to increase data integrity by reducing the number 
     * Need fast reads and write
 
 ## Distributed Databases
----
 * Data is stored on multiple machines
 * Eventual Consistency:
 Over time (if no new changes are made) each copy of the data will be the same, but if there are new changes, the data may be different in different locations. The data may be inconsistent for only milliseconds. There are workarounds in place to prevent getting stale data.

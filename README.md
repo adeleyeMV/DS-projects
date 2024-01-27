@@ -144,3 +144,7 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Quality Assured
     * Handles new business questions well
     * Secure
+
+## Architecture
+---
+* Several possible architectures to building a Data Warehouse

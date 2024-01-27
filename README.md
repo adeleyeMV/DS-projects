@@ -138,3 +138,9 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 ---
 * Data Warehouse is a system (including processes, technologies & data representations that enables support for analytical processing)
 
+* Goals of a Data Warehouse:
+    * Simple to understand
+    * Performant
+    * Quality Assured
+    * Handles new business questions well
+    * Secure

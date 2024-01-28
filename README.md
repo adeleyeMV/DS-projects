@@ -148,3 +148,8 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 ## Architecture
 ---
 * Several possible architectures to building a Data Warehouse
+1. **Kimball's Bus Architecture**:
+![Kimball's Bus Architecture](snapshots/kimball.PNG)
+    * Results in common dimension data models shared by different business departments
+    * Data is not kept at an aggregated level, rather they are at the atomic level
+    * Organized by business processes, used by different departments 

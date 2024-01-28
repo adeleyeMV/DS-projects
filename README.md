@@ -153,3 +153,9 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Results in common dimension data models shared by different business departments
     * Data is not kept at an aggregated level, rather they are at the atomic level
     * Organized by business processes, used by different departments 
+2. **Independent Data Marts**:
+![Independent Data Marts](snapshots/datamart.PNG)
+    * Independent Data Marts have ETL processes that are designed by specific business departments to meet their analytical needs
+    * Different fact tables for the same events, no conformed dimensions
+    * Uncoordinated efforts can lead to inconsistent views
+    * Generally discouraged

@@ -159,3 +159,11 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Different fact tables for the same events, no conformed dimensions
     * Uncoordinated efforts can lead to inconsistent views
     * Generally discouraged
+3. **Inmon's Corporate Information Factory**:
+![Inmon's Corporate Information Factory](snapshots/cif.PNG)
+    * The Enterprise Data Warehouse provides a normalized data architecture before individual departments build on it
+    * 2 ETL Process
+        * Source systems -> 3NF DB
+        * 3NF DB -> Departmental Data Marts
+    * The Data Marts use a source 3NF model (single integrated source of truth) and add denormalization based on department needs
+    * Data marts dimensionally modelled & unlike Kimball's dimensional models, they are mostly aggregated

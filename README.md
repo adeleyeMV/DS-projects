@@ -135,7 +135,6 @@ Over time (if no new changes are made) each copy of the data will be the same, b
         * Data Modeling in Apache Cassandra is query focused, and that focus needs to be on the WHERE clause
         * Failure to include a WHERE clause will result in an error
 ## What is a Data Warehouse?
----
 * Data Warehouse is a system (including processes, technologies & data representations that enables support for analytical processing)
 
 * Goals of a Data Warehouse:
@@ -146,7 +145,6 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Secure
 
 ## Architecture
----
 * Several possible architectures to building a Data Warehouse
 1. **Kimball's Bus Architecture**:
 ![Kimball's Bus Architecture](snapshots/kimball.PNG)

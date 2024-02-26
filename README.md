@@ -167,3 +167,4 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Data marts dimensionally modelled & unlike Kimball's dimensional models, they are mostly aggregated
 4. **Hybrid Kimball Bus & Inmon CIF**:
 ![Hybrid Kimball Bus & Inmon CIF](snapshots/hybrid.PNG)
+

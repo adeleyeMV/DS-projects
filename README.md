@@ -168,3 +168,18 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 4. **Hybrid Kimball Bus & Inmon CIF**:
 ![Hybrid Kimball Bus & Inmon CIF](snapshots/hybrid.PNG)
 
+## OLAP Cubes
+---
+* An OLAP Cube is an aggregation of a fact metric on a number of dimensions
+
+* OLAP cubes need to store the finest grain of data in case drill-down is needed
+
+* Operations:
+1. Roll-up & Drill-Down
+    * Roll-Up: eg, from sales at city level, sum up sales of each city by country
+    * Drill-Down: eg, decompose the sales of each city into smaller districts
+2. Slice & Dice
+    * Slice: Reduce N dimensions to N-1 dimensions by restricting one dimension to a single value
+    * Dice: Same dimensions but computing a sub-cube by restricting some of the values of the dimensions
+    Eg month in ['Feb', 'Mar'] and movie in ['Avatar', 'Batman']
+

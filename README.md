@@ -183,3 +183,8 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Dice: Same dimensions but computing a sub-cube by restricting some of the values of the dimensions
     Eg month in ['Feb', 'Mar'] and movie in ['Avatar', 'Batman']
 
+* Query Optimization
+    * Business users typically want to slice, dice, rollup and drill-down
+    * Each sub-combination goes through all the facts table
+    * Using CUBE operation "GROUP by CUBE" and saving the output is usually enough to answer forthcoming aggregations from business users without having to process the whole facts table again
+

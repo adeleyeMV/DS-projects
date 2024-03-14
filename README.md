@@ -188,3 +188,6 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Each sub-combination goes through all the facts table
     * Using CUBE operation "GROUP by CUBE" and saving the output is usually enough to answer forthcoming aggregations from business users without having to process the whole facts table again
 
+* Serving OLAP Cubes
+    * Approach 1: Pre-aggregate the OLAP cubes and save them on a special purpose non-relational database (MOLAP)
+    * Approach 2: Compute the OLAP Cubes on the fly from existing relational databases where the dimensional model resides (ROLAP)

@@ -40,7 +40,6 @@
 * Need high availability: Relational databases have a single point of failure. When that database goes down, a failover to a backup system must happen and takes time.
 
 ## OLAP vs OLTP:
----
 * Online Analytical Processing (OLAP):
 Databases optimized for these workloads allow for complex analytical and ad hoc queries, including aggregations. These type of databases are optimized for reads.
 
@@ -76,7 +75,6 @@ Databases optimized for these workloads allow for less complex queries in large 
     When you want to update data, we want to be able to do in just 1 place.
 
 ## Denormalization:
----
 JOINS on the database allow for outstanding flexibility but are extremely slow. If you are dealing with heavy reads on your database, you may want to think about denormalizing your tables. You get your data into normalized form, and then you proceed with denormalization. So, denormalization comes after normalization.
 
 ## Normalize vs Denormalize:

@@ -299,3 +299,21 @@ Source: Udacity DE ND
 ## What is a Data Pipeline?
 ---
 * A data pipeline is simply, a series of steps in which data is processed
+## Data Partitioning
+---
+* Pipeline data partitioning is the process of isolating data to be analyzed by one or more attributes, such as time, logical type or data size
+* Data partitioning often leads to faster and more reliable pipelines
+* <ins>Types of Data Partitioning:</ins>
+    1. Schedule partitioning
+        * Not only are schedules great for reducing the amount of data our pipelines have to process, but they also help us guarantee that we can meet timing guarantees that our data consumers may need
+    2. Logical partitioning
+        * Conceptually related data can be partitioned into discrete segments and processed separately. This process of separating data based on its conceptual relationship is called logical partitioning. 
+        * With logical partitioning, unrelated things belong in separate steps. Consider your dependencies and separate processing around those boundaries
+        * Examples of such partitioning are by date and time
+    3. Size partitioning
+        * Size partitioning separates data for processing based on desired or required storage limits
+        * This essentially sets the amount of data included in a data pipeline run
+* Why partition data?
+    * Pipelines designed to work with partitioned data fail more gracefully. Smaller datasets, smaller time periods, and related concepts are easier to debug than big datasets, large time periods, and unrelated concepts
+    * If data is partitioned appropriately, tasks will naturally have fewer dependencies on each other 
+    * Airflow will be able to parallelize execution of DAGs to produce results even faster

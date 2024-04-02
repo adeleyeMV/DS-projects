@@ -271,3 +271,6 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Apache Mesos – a general cluster manager that can also run Hadoop applications
     * Apache Hadoop YARN – the resource manager in Hadoop 2
     * Kubernetes – an open source system for automating deployment, scaling, and management of containerized applications
+    
+## Spark's Limitations
+* Spark Streaming’s latency is at least 500 milliseconds since it operates on micro-batches of records, instead of processing one record at a time. Native streaming tools such as Storm, Apex, or Flink can push down this latency value and might be more suitable for low-latency applications. Flink and Apex can be used for batch computation as well, so if you're already using them for stream processing, there's no need to add Spark to your stack of technologies.

@@ -251,8 +251,8 @@ Over time (if no new changes are made) each copy of the data will be the same, b
         * Rows are sorted before distribution to slices
         * Minimize query time since each node already has contiguous ranges of rows based on sorting key
         * Useful for colummns that are frequently in sorting like date dimension and its corresponding foreign key in fact table
-    ## What is Spark?
----
+        
+## What is Spark?
 * Spark is a general-purpose distributed data processing engine. 
 * On top of the Spark core data processing engine, there are libraries for SQL, machine learning, graph computation, and stream processing, which can be used together in an application.
 * Spark is often used with distributed data stores such as Hadoop's HDFS, and Amazon's S3, with popular NoSQL databases such as Apache HBase, Apache Cassandra, and MongoDB, and with distributed messaging stores such as MapR Event Store and Apache Kafka.

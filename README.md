@@ -317,3 +317,7 @@ Source: Udacity DE ND
     * Pipelines designed to work with partitioned data fail more gracefully. Smaller datasets, smaller time periods, and related concepts are easier to debug than big datasets, large time periods, and unrelated concepts
     * If data is partitioned appropriately, tasks will naturally have fewer dependencies on each other 
     * Airflow will be able to parallelize execution of DAGs to produce results even faster
+
+## Data Validation
+---
+* Data Validation is the process of ensuring that data is present, correct & meaningful. Ensuring the quality of data through automated validation checks is a critical step in building data pipelines at any organization

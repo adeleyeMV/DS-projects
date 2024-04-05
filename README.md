@@ -321,3 +321,13 @@ Source: Udacity DE ND
 ## Data Validation
 ---
 * Data Validation is the process of ensuring that data is present, correct & meaningful. Ensuring the quality of data through automated validation checks is a critical step in building data pipelines at any organization
+
+## Data Quality
+---
+* Data Quality is a measure of how well a dataset satisfies its intended use
+* <ins>Examples of Data Quality Requirements</ins>
+    * Data must be a certain size
+    * Data must be accurate to some margin of error
+    * Data must arrive within a given timeframe from the start of execution
+    * Pipelines must run on a particular schedule
+    * Data must not contain any sensitive information

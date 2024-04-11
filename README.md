@@ -275,3 +275,7 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 ## Spark's Limitations
 * Spark Streaming’s latency is at least 500 milliseconds since it operates on micro-batches of records, instead of processing one record at a time. Native streaming tools such as Storm, Apex, or Flink can push down this latency value and might be more suitable for low-latency applications. Flink and Apex can be used for batch computation as well, so if you're already using them for stream processing, there's no need to add Spark to your stack of technologies.
 * Another limitation of Spark is its selection of machine learning algorithms. Currently, Spark only supports algorithms that scale linearly with the input data size. In general, deep learning is not available either, though there are many projects integrate Spark with Tensorflow and other deep learning tools.
+
+## What is a Data Lake?
+---
+* A data lake is a system or repository of data stored in its natural/raw format, usually object blobs or files (from Wikipedia). 

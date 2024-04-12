@@ -279,3 +279,9 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 ## What is a Data Lake?
 ---
 * A data lake is a system or repository of data stored in its natural/raw format, usually object blobs or files (from Wikipedia). 
+
+## Why Data Lakes?
+---
+* Some data is difficult to put in tabular format, like deep json structures.
+* Text/Image data can be stored as blobs of data, and extracted easily for analytics later on.
+* Analytics such as machine learning and natural language processing may require accessing raw data in forms totally different from a star schema.

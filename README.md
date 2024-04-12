@@ -285,3 +285,10 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 * Some data is difficult to put in tabular format, like deep json structures.
 * Text/Image data can be stored as blobs of data, and extracted easily for analytics later on.
 * Analytics such as machine learning and natural language processing may require accessing raw data in forms totally different from a star schema.
+## Difference between Data Lake and Data Warehouse
+---
+![Lake vs Warehouse](dlvdwh.PNG)
+Source: Udacity DE ND
+
+* A data warehouse is like a producer of water, where users are handled bottled water in a particular size and shape of the bottle.
+* A data lake is like a water lake with many streams flowing into it and its up to users to get the water the way he/she wants

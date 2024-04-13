@@ -292,3 +292,10 @@ Source: Udacity DE ND
 
 * A data warehouse is like a producer of water, where users are handled bottled water in a particular size and shape of the bottle.
 * A data lake is like a water lake with many streams flowing into it and its up to users to get the water the way he/she wants
+
+## Data Lake Issues
+---
+* Data Lake is prone to being a "chaotic garbage dump".
+* Since a data lake is widely accessible across business departments, sometimes data governance is difficult to implement
+* It is still unclear, per given case, whether a data lake should replace, offload or work in parallel with a data warehouse or data marts. In all cases, dimensional modelling, even in the context of a data lake, continue to remain a valuable practice.
+* Data Lake remains an important complement to a Data Warehouse in many businesses.

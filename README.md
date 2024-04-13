@@ -260,7 +260,6 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Pyspark supports imperative (Spark Dataframes) and declarative syntax (Spark SQL)
 
 ## How a Spark Application Runs on a Cluster
----
 * A Spark application runs as independent processes, coordinated by the SparkSession object in the driver program.
 * The resource or cluster manager assigns tasks to workers, one task per partition.
 * A task applies its unit of work to the dataset in its partition and outputs a new partition dataset.
@@ -277,16 +276,14 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 * Another limitation of Spark is its selection of machine learning algorithms. Currently, Spark only supports algorithms that scale linearly with the input data size. In general, deep learning is not available either, though there are many projects integrate Spark with Tensorflow and other deep learning tools.
 
 ## What is a Data Lake?
----
 * A data lake is a system or repository of data stored in its natural/raw format, usually object blobs or files (from Wikipedia). 
 
 ## Why Data Lakes?
----
 * Some data is difficult to put in tabular format, like deep json structures.
 * Text/Image data can be stored as blobs of data, and extracted easily for analytics later on.
 * Analytics such as machine learning and natural language processing may require accessing raw data in forms totally different from a star schema.
+
 ## Difference between Data Lake and Data Warehouse
----
 ![Lake vs Warehouse](dlvdwh.PNG)
 Source: Udacity DE ND
 
@@ -294,7 +291,6 @@ Source: Udacity DE ND
 * A data lake is like a water lake with many streams flowing into it and its up to users to get the water the way he/she wants
 
 ## Data Lake Issues
----
 * Data Lake is prone to being a "chaotic garbage dump".
 * Since a data lake is widely accessible across business departments, sometimes data governance is difficult to implement
 * It is still unclear, per given case, whether a data lake should replace, offload or work in parallel with a data warehouse or data marts. In all cases, dimensional modelling, even in the context of a data lake, continue to remain a valuable practice.

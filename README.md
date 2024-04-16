@@ -189,3 +189,18 @@ Over time (if no new changes are made) each copy of the data will be the same, b
 * Serving OLAP Cubes
     * Approach 1: Pre-aggregate the OLAP cubes and save them on a special purpose non-relational database (MOLAP)
     * Approach 2: Compute the OLAP Cubes on the fly from existing relational databases where the dimensional model resides (ROLAP)
+
+    ## Choices for implementing Data Warehouse:
+---
+1. On-Premise
+    * Need for diverse IT skills & multiple locations
+    * Cost of ownership (capital and operational costs)
+
+2. Cloud
+    * Lower barriers to entry (time and money)
+    * Scalability and elasticity out of the box
+    * Within cloud, there are 2 ways to manage infrastructure
+        1. Cloud-Managed (Amazon RDS, Amazon DynamoDB, Amazon S3)
+           * Reuse of expertise (Infrastructure as Code)
+           * Less operational expense
+        2. Self-Managed (EC2 + Postgres, EC2 + Cassandra, EC2 + Unix FS)

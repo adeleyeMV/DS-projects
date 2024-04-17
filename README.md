@@ -213,3 +213,16 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * is a Massively Parellel Processing Database
         * Parallelizes one query on multiple CPUS/machines
         * A table is partitioned and partitions are processed in parallel
+    2. Architecture
+    * Leader Node:
+        * Coordinates compute nodes
+        * Handles external communication
+        * Optimizes query execution
+    * Compute Node:
+        * Each with CPU, memory, disk and a number of slices
+            * A node with n slices can process n partitions of a table simultaneously
+        * Scale-up: get more powerful nodes
+        * Scale-out: get more nodes
+    * Example of setting up a Data Warehouse in Redshift:
+    ![Example of Data Warehouse](redshift_dwh.PNG)
+    Source: Udacity DE ND Lesson 3: Implementing Data Warehouses on AWS

@@ -204,3 +204,12 @@ Over time (if no new changes are made) each copy of the data will be the same, b
            * Reuse of expertise (Infrastructure as Code)
            * Less operational expense
         2. Self-Managed (EC2 + Postgres, EC2 + Cassandra, EC2 + Unix FS)
+
+    ## Amazon Redshift
+---
+1. Properties
+    * Column-oriented storage, internally it is modified Postgresql
+    * Best suited for storing OLAP workloads
+    * is a Massively Parellel Processing Database
+        * Parallelizes one query on multiple CPUS/machines
+        * A table is partitioned and partitions are processed in parallel

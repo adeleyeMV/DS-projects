@@ -226,3 +226,9 @@ Over time (if no new changes are made) each copy of the data will be the same, b
     * Example of setting up a Data Warehouse in Redshift:
     ![Example of Data Warehouse](redshift_dwh.PNG)
     Source: Udacity DE ND Lesson 3: Implementing Data Warehouses on AWS
+    3. Ingesting at Scale
+    * Use COPY command to transfer from S3 staging area
+    * If the file is large, better to break it up into multiple files
+        * Either use a common prefix or a manifest file
+    * Ingest from the same AWS region
+    * Compress all csv files

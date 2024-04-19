@@ -232,3 +232,18 @@ Over time (if no new changes are made) each copy of the data will be the same, b
         * Either use a common prefix or a manifest file
     * Ingest from the same AWS region
     * Compress all csv files
+    4. Optimizing Table Design
+    * 2 possible strategies: distribution style and sorting key
+
+    1. Distribution style
+        * Even:
+            * Round-robin over all slices for load-balancing
+            * High cost of joining (Shuffling)
+        * All:
+            * Small (dimension) tables can be replicated on all slices to speed up joins
+        * Auto: 
+            * Leave decision with Redshift, "small enough" tables are distributed with an ALL strategy. Large tables distributed with EVEN strategy
+        * KEY:
+            * Rows with similar values of key column are placed in the same slice
+            * Can lead to skewed distribution if some values of dist key are more frequent than others
+            * Very useful for large dimension tables

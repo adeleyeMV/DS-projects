@@ -247,3 +247,7 @@ Over time (if no new changes are made) each copy of the data will be the same, b
             * Rows with similar values of key column are placed in the same slice
             * Can lead to skewed distribution if some values of dist key are more frequent than others
             * Very useful for large dimension tables
+    2. Sorting key
+        * Rows are sorted before distribution to slices
+        * Minimize query time since each node already has contiguous ranges of rows based on sorting key
+        * Useful for colummns that are frequently in sorting like date dimension and its corresponding foreign key in fact table

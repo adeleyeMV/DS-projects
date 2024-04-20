@@ -295,3 +295,7 @@ Source: Udacity DE ND
 * Since a data lake is widely accessible across business departments, sometimes data governance is difficult to implement
 * It is still unclear, per given case, whether a data lake should replace, offload or work in parallel with a data warehouse or data marts. In all cases, dimensional modelling, even in the context of a data lake, continue to remain a valuable practice.
 * Data Lake remains an important complement to a Data Warehouse in many businesses.
+
+## What is a Data Pipeline?
+---
+* A data pipeline is simply, a series of steps in which data is processed

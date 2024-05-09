@@ -331,3 +331,7 @@ Source: Udacity DE ND
     * Data must arrive within a given timeframe from the start of execution
     * Pipelines must run on a particular schedule
     * Data must not contain any sensitive information
+
+## Directed Acyclic Graphs
+---
+* Directed Acyclic Graphs (DAGs): DAGs are a special subset of graphs in which the edges between nodes have a specific direction, and no cycles exist. 

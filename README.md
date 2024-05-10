@@ -335,3 +335,12 @@ Source: Udacity DE ND
 ## Directed Acyclic Graphs
 ---
 * Directed Acyclic Graphs (DAGs): DAGs are a special subset of graphs in which the edges between nodes have a specific direction, and no cycles exist. 
+
+
+## Apache Airflow
+---
+* What is Airflow?
+    * Airflow is a platform to programmatically author, schedule and monitor workflows
+    * Use airflow to author workflows as directed acyclic graphs (DAGs) of tasks
+    * The airflow scheduler executes your tasks on an array of workers while following the specified dependencies
+    * When workflows are defined as code, they become more maintainable, versionable, testable, and collaborative

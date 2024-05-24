@@ -368,3 +368,35 @@ Source: Udacity DE ND
     * <ins>Context & Templating</ins>
         * Airflow leverages templating to allow users to "fill in the blank" with important runtime variables for tasks
         * See: https://airflow.apache.org/docs/stable/macros-ref for a list of context variables
+
+    * Airflow functionalities
+    * Airflow Plugins
+        * Airflow was built with the intention of allowing its users to extend and customize its functionality through plugins. 
+        * The most common types of user-created plugins for Airflow are Operators and Hooks. These plugins make DAGs reusable and simpler to maintain
+        * To create custom operator, follow the steps
+            1. Identify Operators that perform similar functions and can be consolidated
+            2. Define a new Operator in the plugins folder
+            3. Replace the original Operators with your new custom one, re-parameterize, and instantiate them
+    * Airflow subdags
+        * Commonly repeated series of tasks within DAGs can be captured as reusable SubDAGs
+        * Benefits include:
+            * Decrease the amount of code we need to write and maintain to create a new DAG
+            * Easier to understand the high level goals of a DAG
+            * Bug fixes, speedups, and other enhancements can be made more quickly and distributed to all DAGs that use that SubDAG
+        * Drawbacks of Using SubDAGs:
+            * Limit the visibility within the Airflow UI
+            * Abstraction makes understanding what the DAG is doing more difficult
+            * Encourages premature optimization
+
+    * Monitoring
+        * Airflow can surface metrics and emails to help you stay on top of pipeline issues
+        * SLAs
+            * Airflow DAGs may optionally specify an SLA, or “Service Level Agreement”, which is defined as a time by which a DAG must complete
+            * For time-sensitive applications these features are critical for developing trust amongst pipeline customers and ensuring that data is delivered while it is still meaningful
+        * Emails and Alerts
+            * Airflow can be configured to send emails on DAG and task state changes
+            * These state changes may include successes, failures, or retries
+            * Failure emails can easily trigger alerts
+        * Metrics
+            * Airflow comes out of the box with the ability to send system metrics using a metrics aggregator called statsd
+            *  Statsd can be coupled with metrics visualization tools like Grafana to provide high level insights into the overall performance of DAGs, jobs, and tasks

@@ -400,3 +400,10 @@ Source: Udacity DE ND
         * Metrics
             * Airflow comes out of the box with the ability to send system metrics using a metrics aggregator called statsd
             *  Statsd can be coupled with metrics visualization tools like Grafana to provide high level insights into the overall performance of DAGs, jobs, and tasks
+
+ * Best practices for data pipelining
+    * Task Boundaries  
+    DAG tasks should be designed such that they are:
+        * Atomic and have a single purpose
+        * Maximize parallelism
+        * Make failure states obvious
